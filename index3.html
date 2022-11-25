@@ -510,8 +510,22 @@
           ilustrate.*</i
         >
       </p>
+      <div class="button">
+        <button type="button" class="btn btn-info">Hi!</button>
+      </div>
     </div>
+    <div class="pb-5"></div>
 
-    <script src="js/bootstrap.bundle.js"></script>
+
+    <script>
+      function buttonInfo() {
+        let name = prompt("What is your name?");
+
+        alert("Welcome to our Octavia's Lovers clube, " + " " + name + "!");
+      }
+      let moreInfos = document.querySelector(".button");
+      moreInfos.addEventListener("click", buttonInfo);
+    </script>
+    
   </body>
 </html>
